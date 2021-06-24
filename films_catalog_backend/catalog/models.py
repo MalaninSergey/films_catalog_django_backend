@@ -13,6 +13,9 @@ class Person(models.Model):
     biography = models.TextField(default='Бмография человека')
     image = models.ImageField(upload_to='persons')
 
+    def __str__(self):
+        return self.name
+
 
 class Film(models.Model):
     name = models.CharField(max_length=50, default="Film name")
