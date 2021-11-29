@@ -6,6 +6,7 @@ router = routers.DefaultRouter()
 router.register('films', FilmViewSet, 'film')
 router.register('series', SeriesViewSet, 'series')
 router.register('persons', PersonViewSet, 'person')
+router.register('tags', TagViewSet, 'tags')
 
 urlpatterns = [
     path('', include(router.urls))

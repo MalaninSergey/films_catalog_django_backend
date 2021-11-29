@@ -1,5 +1,5 @@
 from django.db import models
-from users.models import Profile
+from films_catalog_backend.users.models import Profile
 
 
 class Review(models.Model):
